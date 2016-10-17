@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+        android:focusable="true"
+    android:focusableInTouchMode="true"
+    >
+  <ImageView
+      android:layout_width="match_parent"
+      android:layout_height="180dp"
+      android:src="@drawable/wish"
+      android:scaleType="centerCrop"
+     />
+    <EditText
+        android:id="@+id/wish_content_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/wish_hint"
+        android:textColorHint="@color/wish_hint"
+        android:textSize="@dimen/wish"
+        android:background="@null"
+
+       />
+    <EditText
+        android:id="@+id/wish_name_edit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@null"
+        android:hint="@string/name"
+        android:textSize="@dimen/wish"
+        android:textColorHint="@color/wish_hint"
+        android:visibility="gone"
+       />
+    <Button
+        android:id="@+id/send_wish_button"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:background="@null"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/send_wish"
+        android:textColor="@color/wish_hint"
+        android:visibility="gone"/>
+    <ListView
+        android:id="@+id/show_wish_listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+     />
+
+</LinearLayout>

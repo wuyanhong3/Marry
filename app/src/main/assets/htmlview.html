@@ -1,0 +1,147 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>婚庆主页</title>
+   <style title="text/css">
+       .imgTop {
+	width:1080dp;
+	margin-left: -10px;
+	margin-right: -10px;
+	min-height: 200px;
+	position:relative;
+	border-bottom:1px solid #ffeeac;
+}
+
+.imgTop .imgtop_bg{
+	width: 100%;
+}
+
+.imgTop .imgtop_lb {
+	margin-top: 10px;
+	margin-left: 10px;
+	position: absolute;left: 10px; top:10px;
+}
+.p3 {
+	width: 118px;
+	height: 22px;
+
+	 background-color: #ff6766; 
+	 margin: 10px; 
+	 float: right;
+	 margin-top:110px; 
+
+	padding: 30px;
+	position: absolute;
+	right: 10px;
+	bottom : 0px; 
+
+}
+
+.sp1 {
+	font-size: 10px;
+	color: #ffeeac;
+}
+
+.sp2 {
+	font-size: 10px;
+	color: #ffeeac;
+	text-align: right;
+	margin-right:20px;
+}
+
+.sp3 {
+	font-size: 20px;
+	margin-right:20px;
+}
+
+.imgShow {
+	width: 420px;
+	height: 288px;
+	overflow: hidden;
+	margin-left: -10px;
+	margin-top: 14px;
+
+}
+
+.imgShow img {
+	width: 182px;
+	height: 142px;
+	display: inline-block;
+	float: left;
+	margin-left: 12px;
+	margin-bottom: 10px;
+}
+.footer {
+	margin-top: 14px;
+	text-align: center;
+}
+
+.footer a {
+	color: #92192d;
+	font-size: 14px;
+}
+
+.footer img {
+	width: 20px;
+	display: inline-block;
+	position: relative;
+	top: 2px;
+	margin-left: 8px;
+}
+   #sp11{
+	   margin-left:150px;}
+	   #phone{
+	   margin-top:170px;
+	   }
+   </style>
+	<script>
+	     function myFunction(){
+		       //alert("hello");
+			   window.myJavaScriptInterface.MarryCard();
+			   //window:浏览器窗口对象
+			   //MyJavaScriptInterface：js与原生android应用交互的接口名
+			   //showToast: js与原生android应用交互的接口的方法名
+			}
+               function myFunctionB(){
+               alert("hello");
+			   window.myJavaScriptInterface.ShowPhoto();
+			}
+			 function myFunctionC(){
+               alert("hello");
+			   window.myJavaScriptInterface.Wish();
+			}
+    </script>
+
+</head>
+     
+<body  bgcolor="#FFFFFF">
+ <div class="wrapcontain" style="width: 1080dp;padding: 10px;padding-top: 0px;margin: 0 auto;background-color:#680011;">
+		<div class="imgTop">
+			<img class="imgtop_bg" src='hunshazhao.jpg' />
+			<img id="phone" class="imgtop_lb" src="index_microphone.png"/>
+			<h3 id="p3">
+				<p id="sp11" class="sp1">离我们婚礼</p>
+				<p class="sp2">
+					还有<span class="sp3">35</span>天
+				</p>
+			</h3>
+		</div>
+
+		<div class="imgShow" >
+		<img id="photo"  onclick="myFunction()" src="index_yaoqinghan.png" clickable="true" />
+			<img id="photoB"  onclick="myFunctionC()"  src="index_zhufuqiang.png"/>
+			<img  src="index_yaoyiyao.png"/>
+			<img id="photoC" onclick="myFunctionB()" src="index_hunsha.png" clickable="true" />
+		</div>
+
+		<div class="footer">
+
+			<a href="###">婚礼承办方:成都幸福公社婚庆公司<img
+				src="redRightarrow.png" /></a>
+
+		</div>
+	</div>
+
+</body>
+</html>
